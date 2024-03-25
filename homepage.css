@@ -1,0 +1,168 @@
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px;
+    padding: 10px; 
+}
+p{
+    font-size: large;
+}
+
+@media (max-width: 700px) {
+    .story {
+        grid-template-columns: 1fr; 
+    }
+    
+}     
+
+#namho{
+    width: 450px;
+    height: 450px;
+}
+#name{
+    padding-top: 20px;
+}
+#year{
+    margin: 10px;
+    padding: 5px;
+}
+#life{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;   
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color: black;
+}
+
+
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    padding: 20px; 
+    place-items: center;
+}
+
+    
+@media (max-width: 700px) {
+    .project{
+        grid-template-columns: 1fr; 
+    }
+}
+#explain{
+    font-size: large;
+}
+#explain img{
+    width: 5vw;
+    height: 5vw;
+}
+    
+.carousel-inner{
+    margin: 50px;
+    width: 400px;
+    height: 600px;
+} 
+
+
+
+.col{
+    border: 5px solid red;
+    margin-right: 30px;
+}
+.container{
+    margin: 50px;
+}
+.bar{
+    margin: 30px;
+}
+#content{
+    border: 1px solid black;
+    margin-top: 10px;
+}
+h1,h2,.bar,#explain,form{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 300%;
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+h1,h2{
+margin: 40px;
+font-style:italic;
+}
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.progress{
+height: 30px;
+}
+.col:hover {
+transform: scale(1.1); 
+transition: transform 0.5s ease-in-out; 
+}
+.progress:hover {
+transform: scale(1.1); 
+transition: transform 0.5s ease-in-out; 
+}
+
+
+
+#hidden-message {
+    display: none;
+}
+#hidden-message:target {
+        display: block;
+        color: red;
+        margin-top: 20px;
+}
+.submit-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover + .error-message {
+
+    display: block;
+}       
+
+.error-message {
+    display: none;
+    color: red;
+    margin-top: 5px;
+}
+#msg{
+    width: 2vw;
+    height: 2vw;
+}
+
+
+
+input,textarea{
+    width: 300px;
+    height: 100px;     
+}
+@media (max-width: 600px) {
+    form {
+      width: 100%;
+      height: auto;
+    }
+    #msg{
+        width: 5vw;
+        height: 5vw;
+    }
+}
